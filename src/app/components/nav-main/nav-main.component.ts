@@ -11,7 +11,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './nav-main.component.css'
 })
 export class NavMainComponent {
-  isOpen = false;
+  isOpen:boolean = false;
 
   toggleMenu() {
     this.isOpen = !this.isOpen;

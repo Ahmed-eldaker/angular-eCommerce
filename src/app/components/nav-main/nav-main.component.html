@@ -9,11 +9,15 @@
 
             <!-- Center: Brands (hidden on mobile) -->
             <div class="hidden md:flex space-x-6">
-                <a routerLink="" class="text-gray-700 hover:text-amber-600">Home</a>
-                <a routerLink="brands" class="text-gray-700 hover:text-amber-600">Carts</a>
-                <a routerLink="brands" class="text-gray-700 hover:text-amber-600">Brands</a>
-                <a routerLink="products" class="text-gray-700 hover:text-amber-600">Products</a>
-                <a routerLink="categories" class="text-gray-700 hover:text-amber-600">Categories</a>
+                <a routerLink="" routerLinkActive="text-lime-600 " class="text-gray-700  hover:text-amber-600">Home</a>
+                <a routerLink="cart" routerLinkActive="text-lime-600 "
+                    class="text-gray-700 hover:text-amber-600">Cart</a>
+                <a routerLink="brands" routerLinkActive="text-lime-600 "
+                    class="text-gray-700 hover:text-amber-600">Brands</a>
+                <a routerLink="products" routerLinkActive="text-lime-600 "
+                    class="text-gray-700 hover:text-amber-600">Products</a>
+                <a routerLink="categories" routerLinkActive="text-lime-600 "
+                    class="text-gray-700 hover:text-amber-600">Categories</a>
             </div>
 
             <!-- Right: Social + Sign Out (hidden on mobile) -->
@@ -45,11 +49,14 @@
     <!-- Mobile Menu -->
     <div *ngIf="isOpen" class="md:hidden px-4 pt-2 pb-4 space-y-2 bg-white shadow-inner">
         <div class="flex flex-col">
-            <a routerLink="" class="text-gray-700 hover:text-amber-600">Home</a>
-            <a routerLink="brands" class="text-gray-700 hover:text-amber-600">Carts</a>
-            <a routerLink="brands" class="text-gray-700 hover:text-amber-600">Brands</a>
-            <a routerLink="products" class="text-gray-700 hover:text-amber-600">Products</a>
-            <a routerLink="categories" class="text-gray-700 hover:text-amber-600">Categories</a>
+            <a routerLink="" routerLinkActive="text-lime-600" class="text-gray-700 hover:text-amber-600">Home</a>
+            <a routerLink="cart" routerLinkActive="text-lime-600" class="text-gray-700 hover:text-amber-600">Carts</a>
+            <a routerLink="brands" routerLinkActive="text-lime-600"
+                class="text-gray-700 hover:text-amber-600">Brands</a>
+            <a routerLink="products" routerLinkActive="text-lime-600"
+                class="text-gray-700 hover:text-amber-600">Products</a>
+            <a routerLink="categories" routerLinkActive="text-lime-600"
+                class="text-gray-700 hover:text-amber-600">Categories</a>
         </div>
         <div class="flex justify-start space-x-4 mt-2">
             <!-- Social Links: GitHub, Twitter, LinkedIn -->
